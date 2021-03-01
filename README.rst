@@ -2,9 +2,10 @@
 django-geojson
 ==============
 
+* Test for use with Django 3.3 and models.JSONField  
+
 See the `documentation <https://django-geojson.readthedocs.io/en/latest/>`_ for more information.
 
-Test for use with Django 3.3 and models.JSONField  
 
 *django-geojson* is a set of tools to manipulate GeoJSON with Django :
 

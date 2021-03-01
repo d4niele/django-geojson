@@ -11,8 +11,11 @@ try:
 except ImportError:
     HAS_LEAFLET = False
 try:
-    from jsonfield.fields import JSONField
-    from jsonfield.forms import JSONField as JSONFormField
+    from django.db.models import JSONField
+    from django.forms import JSONField as JSONFormField
+    #from jsonfield.fields import JSONField
+    #from jsonfield.forms import JSONField as JSONFormField
+    
 except ImportError:
     class Missing(object):
         def __init__(self, *args, **kwargs):
@@ -64,7 +67,7 @@ class GeoJSONField(JSONField):
     geom_type = 'GEOMETRY'
 
     def formfield(self, **kwargs):
-        kwargs.setdefault('geom_type', self.geom_type)
+        #kwargs.setdefault('geom_type', self.geom_type)
         return super(GeoJSONField, self).formfield(**kwargs)
 
 

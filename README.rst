@@ -2,7 +2,7 @@
 django-geojson
 ==============
 
-**Test for use with Django 3.3 and models.JSONField**
+**Test for use with Django > 3.1.3 and models.JSONField**
 
 See the `documentation <https://django-geojson.readthedocs.io/en/latest/>`_ for more information.
 
